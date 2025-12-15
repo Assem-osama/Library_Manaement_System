@@ -1,0 +1,15 @@
+1|admin1|1234|Admin|admin1@email.com
+2|admin2|4231|Admin|admin2@email.com
+3|librarian1|2323|Librarian|lib1@email.com
+4|librarian2|2333|Librarian|lib2@email.com
+5|patron1|1221|Patron|patron1@email.com
+6|patron2|8776|Patron|patron2@email.com
+7|taha|1212|Admin|taha@gmail.com
+8|ayman|1212|Librarian|ayman
+9|assem|1212|Admin|assemosama
+11|ddd|1313|Admin|salma
+14|admin10|1212|Admin|admin10@gmail.com
+15|assem1|1111|Admin|assem1@gmail.com
+16|assem120|1111|Admin|asswmosama@gmail.com
+17|rrr|1233|Patron|dffhfdfd
+18|www|1111|Admin|qqq

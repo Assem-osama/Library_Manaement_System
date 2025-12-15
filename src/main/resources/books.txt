@@ -1,0 +1,7 @@
+1|The Alchemist|Paulo Coelho|Fiction|1988|Available
+2|Clean Code|Robert Martin|Programming|2008|CheckedOut
+3|Java: The Complete Reference|Herbert Schildt|Programming|2018|CheckedOut
+4|1984|George Orwell|Fiction|1949|CheckedOut
+5|The Pragmatic Programmer|Andy Hunt|Programming|1999|Available
+6|The Hobbit|J.R.R. Tolkien|Fantasy|1937|Reserved
+7|Harry Potter and the Sorcerer's Stone|J.K. Rowling|Fantasy|1997|Available
