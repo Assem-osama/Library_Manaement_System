@@ -5,6 +5,7 @@ import com.mycompany.library_manaement_system.Controller.TransactionController;
 import com.mycompany.library_manaement_system.Controller.UserController;
 import com.mycompany.library_manaement_system.data.Models.Book;
 import com.mycompany.library_manaement_system.data.Models.Transaction;
+import com.mycompany.library_manaement_system.data.Models.User;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
@@ -14,18 +15,25 @@ public class LibrarianForm extends javax.swing.JFrame {
     private TransactionController transactionController;
     // userController is initialized but not heavily used here, keeping for
     // consistency
+    private User user;
     private UserController userController;
     private DefaultTableModel reservationTableModel;
 
-    public LibrarianForm() {
+    public LibrarianForm(User user) {
+        this.user = user;
         bookController = new BookController();
         transactionController = new TransactionController(bookController);
         userController = new UserController();
 
         initComponents();
+        initCustomComponents();
         loadReservations();
-        setTitle("Librarian Dashboard");
+        setTitle("Librarian Dashboard - " + user.getUsername());
         setLocationRelativeTo(null);
+    }
+
+    public LibrarianForm() {
+        initComponents();
     }
 
     /**
@@ -300,6 +308,77 @@ public class LibrarianForm extends javax.swing.JFrame {
             }
         }
         reservationTable.setModel(reservationTableModel);
+    }
+
+    private void initCustomComponents() {
+        // Profile Panel setup
+        javax.swing.JPanel profilePanel = new javax.swing.JPanel();
+        javax.swing.JLabel lblUsername = new javax.swing.JLabel("Username:");
+        javax.swing.JLabel lblEmail = new javax.swing.JLabel("Email:");
+        javax.swing.JLabel lblPassword = new javax.swing.JLabel("Password:");
+
+        javax.swing.JTextField txtUsername = new javax.swing.JTextField(user.getUsername());
+        txtUsername.setEditable(false);
+
+        javax.swing.JTextField txtEmail = new javax.swing.JTextField(user.getGmail());
+        javax.swing.JPasswordField txtPassword = new javax.swing.JPasswordField(user.getPassword());
+        javax.swing.JButton btnSave = new javax.swing.JButton("Save Changes");
+
+        btnSave.addActionListener(e -> {
+            String newEmail = txtEmail.getText();
+            String newPass = new String(txtPassword.getPassword());
+
+            if (newEmail.isEmpty() || newPass.isEmpty()) {
+                JOptionPane.showMessageDialog(this, "Email and Password cannot be empty.");
+                return;
+            }
+
+            if (userController.updateUser(user.getId(), user.getUsername(), newPass, newEmail, user.getType())) {
+                JOptionPane.showMessageDialog(this, "Profile Updated Successfully!");
+                user.setGmail(newEmail);
+                user.setPassword(newPass);
+            } else {
+                JOptionPane.showMessageDialog(this, "Failed to update profile.");
+            }
+        });
+
+        // Manual Layout for Profile Panel to avoid GridBag complexity if not needed
+        javax.swing.GroupLayout profileLayout = new javax.swing.GroupLayout(profilePanel);
+        profilePanel.setLayout(profileLayout);
+        profileLayout.setHorizontalGroup(profileLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(profileLayout.createSequentialGroup()
+                        .addGap(20)
+                        .addGroup(profileLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(lblUsername)
+                                .addComponent(lblEmail)
+                                .addComponent(lblPassword))
+                        .addGap(20)
+                        .addGroup(profileLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addComponent(txtUsername, javax.swing.GroupLayout.DEFAULT_SIZE, 200, Short.MAX_VALUE)
+                                .addComponent(txtEmail)
+                                .addComponent(txtPassword)
+                                .addComponent(btnSave))
+                        .addContainerGap(200, Short.MAX_VALUE)));
+
+        profileLayout.setVerticalGroup(profileLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(profileLayout.createSequentialGroup()
+                        .addGap(20)
+                        .addGroup(profileLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(lblUsername)
+                                .addComponent(txtUsername))
+                        .addGap(15)
+                        .addGroup(profileLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(lblEmail)
+                                .addComponent(txtEmail))
+                        .addGap(15)
+                        .addGroup(profileLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(lblPassword)
+                                .addComponent(txtPassword))
+                        .addGap(25)
+                        .addComponent(btnSave)
+                        .addContainerGap(200, Short.MAX_VALUE)));
+
+        jTabbedPane1.addTab("My Profile", profilePanel);
     }
 
     // Variables declaration - do not modify

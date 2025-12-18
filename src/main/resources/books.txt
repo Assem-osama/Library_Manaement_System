@@ -2,6 +2,49 @@
 2|Clean Code|Robert Martin|Programming|2008|CheckedOut
 3|Java: The Complete Reference|Herbert Schildt|Programming|2018|CheckedOut
 4|1984|George Orwell|Fiction|1949|CheckedOut
-5|The Pragmatic Programmer|Andy Hunt|Programming|1999|Available
+5|The Pragmatic Programmer|Andy Hunt|Programming|1999|Reserved
 6|The Hobbit|J.R.R. Tolkien|Fantasy|1937|Reserved
 7|Harry Potter and the Sorcerer's Stone|J.K. Rowling|Fantasy|1997|Available
+8|Effective Java|Joshua Bloch|Programming|2017|CheckedOut
+9|To Kill a Mockingbird|Harper Lee|Fiction|1960|CheckedOut
+10|The Lord of the Rings|J.R.R. Tolkien|Fantasy|1954|Available
+11|Design Patterns|Erich Gamma|Programming|1994|Available
+12|Moby Dick|Herman Melville|Fiction|1851|Reserved
+13|Clean Architecture|Robert Martin|Programming|2017|Available
+14|The Catcher in the Rye|J.D. Salinger|Fiction|1951|Available
+15|Brave New World|Aldous Huxley|Fiction|1932|CheckedOut
+16|The Shining|Stephen King|Horror|1977|Available
+17|It|Stephen King|Horror|1986|CheckedOut
+18|The Da Vinci Code|Dan Brown|Thriller|2003|Available
+19|Angels & Demons|Dan Brown|Thriller|2000|CheckedOut
+20|Inferno|Dan Brown|Thriller|2013|Available
+21|The Girl with the Dragon Tattoo|Stieg Larsson|Mystery|2005|Available
+22|The Girl Who Played with Fire|Stieg Larsson|Mystery|2006|CheckedOut
+23|The Girl Who Kicked the Hornets' Nest|Stieg Larsson|Mystery|2007|Reserved
+24|The Hunger Games|Suzanne Collins|Dystopian|2008|Available
+25|Catching Fire|Suzanne Collins|Dystopian|2009|CheckedOut
+26|Mockingjay|Suzanne Collins|Dystopian|2010|Available
+27|Sapiens|Yuval Noah Harari|History|2011|Available
+28|Homo Deus|Yuval Noah Harari|History|2015|Available
+29|21 Lessons for the 21st Century|Yuval Noah Harari|History|2018|Reserved
+30|Atomic Habits|James Clear|Self-help|2018|Available
+31|Thinking, Fast and Slow|Daniel Kahneman|Psychology|2011|Available
+32|The Power of Habit|Charles Duhigg|Self-help|2012|CheckedOut
+33|Educated|Tara Westover|Memoir|2018|Available
+34|Becoming|Michelle Obama|Memoir|2018|Reserved
+35|The Silent Patient|Alex Michaelides|Thriller|2019|Available
+36|Where the Crawdads Sing|Delia Owens|Fiction|2018|CheckedOut
+37|Normal People|Sally Rooney|Fiction|2018|Available
+38|Little Fires Everywhere|Celeste Ng|Fiction|2017|Reserved
+39|Big Little Lies|Liane Moriarty|Fiction|2014|CheckedOut
+40|The Fault in Our Stars|John Green|Young Adult|2012|CheckedOut
+41|Looking for Alaska|John Green|Young Adult|2005|Available
+42|Paper Towns|John Green|Young Adult|2008|Reserved
+43|To Kill a Mockingbird|Harper Lee|Fiction|1960|Available
+44|Pride and Prejudice|Jane Austen|Fiction|1813|CheckedOut
+45|Moby-Dick|Herman Melville|Fiction|1851|Available
+46|War and Peace|Leo Tolstoy|Fiction|1869|Reserved
+47|Crime and Punishment|Fyodor Dostoevsky|Fiction|1866|Available
+48|The Brothers Karamazov|Fyodor Dostoevsky|Fiction|1880|CheckedOut
+49|The Catcher in the Rye|J.D. Salinger|Fiction|1951|Available
+50|Brave New World|Aldous Huxley|Dystopian|1932|Reserved

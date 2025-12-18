@@ -570,7 +570,7 @@ public class AdminForm extends javax.swing.JFrame {
         transTable.setModel(transModel);
     }
 
-    // Variables declaration - do not modify
+    
     private javax.swing.JButton addBookButton;
     private javax.swing.JButton addUserButton;
     private javax.swing.JTextField bookAuthorField;
@@ -609,5 +609,5 @@ public class AdminForm extends javax.swing.JFrame {
     private javax.swing.JTextField userPassField;
     private javax.swing.JTable userTable;
     private javax.swing.JComboBox<User.UserType> userTypeCombo;
-    // End of variables declaration
+    
 }

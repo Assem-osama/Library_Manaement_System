@@ -131,7 +131,7 @@ public class LoginForm extends javax.swing.JFrame {
                     new AdminForm().setVisible(true);
                     break;
                 case Librarian:
-                    new LibrarianForm().setVisible(true);
+                    new LibrarianForm(user).setVisible(true);
                     break;
                 case Patron:
                     new PatronForm(user).setVisible(true);
