@@ -32,7 +32,6 @@ public class PatronForm extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }
 
-    
     public PatronForm() {
         initComponents();
     }
@@ -124,7 +123,6 @@ public class PatronForm extends javax.swing.JFrame {
         jTabbedPane1.addTab("My Profile", profilePanel);
     }
 
-    
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">
     private void initComponents() {
@@ -390,19 +388,17 @@ public class PatronForm extends javax.swing.JFrame {
             return;
         }
 
-      
-
         try {
-            
+
             List<Transaction> userTrans = transactionController.getTransactionsByUserId(user.getId());
             if (row >= 0 && row < userTrans.size()) {
                 Transaction t = userTrans.get(row);
-             
+
                 if (t.getType() != Transaction.TransactionType.CheckOut
                         && t.getType() != Transaction.TransactionType.Renew) {
                     JOptionPane.showMessageDialog(this,
                             "You can only return currently borrowed books (CheckOut/Renew status).");
-                
+
                     return;
                 }
 

@@ -10,7 +10,7 @@
 10|The Lord of the Rings|J.R.R. Tolkien|Fantasy|1954|Available
 11|Design Patterns|Erich Gamma|Programming|1994|Available
 12|Moby Dick|Herman Melville|Fiction|1851|Reserved
-13|Clean Architecture|Robert Martin|Programming|2017|Available
+13|Clean Architecture|Robert Martin|Programming|2017|Reserved
 14|The Catcher in the Rye|J.D. Salinger|Fiction|1951|Available
 15|Brave New World|Aldous Huxley|Fiction|1932|CheckedOut
 16|The Shining|Stephen King|Horror|1977|Available
@@ -21,7 +21,7 @@
 21|The Girl with the Dragon Tattoo|Stieg Larsson|Mystery|2005|Available
 22|The Girl Who Played with Fire|Stieg Larsson|Mystery|2006|CheckedOut
 23|The Girl Who Kicked the Hornets' Nest|Stieg Larsson|Mystery|2007|Reserved
-24|The Hunger Games|Suzanne Collins|Dystopian|2008|Available
+24|The Hunger Games|Suzanne Collins|Dystopian|2008|Reserved
 25|Catching Fire|Suzanne Collins|Dystopian|2009|CheckedOut
 26|Mockingjay|Suzanne Collins|Dystopian|2010|Available
 27|Sapiens|Yuval Noah Harari|History|2011|Available

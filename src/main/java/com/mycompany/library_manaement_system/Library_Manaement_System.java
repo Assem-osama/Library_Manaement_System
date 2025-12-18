@@ -10,10 +10,9 @@ public class Library_Manaement_System {
         try {
             UIManager.setLookAndFeel("javax.swing.plaf.nimbus.NimbusLookAndFeel");
         } catch (Exception e) {
-            // ignore if Nimbus not available
+            
         }
 
-        // Open Register Form
         new com.mycompany.library_manaement_system.View.RegisterForm().setVisible(true);
     }
 }
